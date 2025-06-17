@@ -1,0 +1,24 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Test Protection
+    environment: production
+    steps:
+      - uses: actions/checkout@v3
+      # < your build process here >
+      - name: Protect with Jscrambler
+        id: jscrambler
+        uses: jscrambler/code-integrity-actions/protect@v6
+        with:
+          application-id: ${{ secrets.JSCRAMBLER_APPLICATION_ID }}
+          secret-key: ${{ secrets.JSCRAMBLER_SECRET_KEY }}
+          access-key: ${{ secrets.JSCRAMBLER_ACCESS_KEY }}
+          jscrambler-config-path: jscrambler.json
+          files-src: index.js
+          files-dest: protected.js
+      - name: Upload protected code as a GitHub artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: protected-source-code
+          path: protection.js
+          retention-days: 1
