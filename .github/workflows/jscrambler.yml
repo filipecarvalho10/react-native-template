@@ -22,7 +22,7 @@ jobs:
           files-src: index.js
           files-dest: protected.js
       - name: Upload protected code as a GitHub artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: protected-source-code
           path: protection.js
