@@ -1,11 +1,16 @@
+name: Jscrambler
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     name: Test Protection
     environment: production
     steps:
-      - uses: actions/checkout@v3
-      # < your build process here >
       - name: Protect with Jscrambler
         id: jscrambler
         uses: jscrambler/code-integrity-actions/protect@v6
