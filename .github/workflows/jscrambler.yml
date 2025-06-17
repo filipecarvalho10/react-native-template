@@ -11,6 +11,8 @@ jobs:
     name: Test Protection
     environment: production
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
       - name: Protect with Jscrambler
         id: jscrambler
         uses: jscrambler/code-integrity-actions/protect@v6
