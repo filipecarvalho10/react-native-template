@@ -1,0 +1,70 @@
+{
+  "jscramblerVersion": "8.4",
+  "mode": "manual",
+  "areSubscribersOrdered": false,
+  "useRecommendedOrder": true,
+  "tolerateMinification": true,
+  "profilingDataMode": "off",
+  "useAppClassification": true,
+  "browsers": {},
+  "sourceMaps": false,
+  "params": [
+    {
+      "name": "objectPropertiesSparsing"
+    },
+    {
+      "name": "variableMasking"
+    },
+    {
+      "name": "whitespaceRemoval"
+    },
+    {
+      "name": "dotToBracketNotation"
+    },
+    {
+      "name": "duplicateLiteralsRemoval",
+      "options": {
+        "options": [
+          "localOnly"
+        ],
+        "mode": [
+          "optimization"
+        ]
+      }
+    },
+    {
+      "name": "stringConcealing"
+    },
+    {
+      "name": "functionReordering"
+    },
+    {
+      "name": "propertyKeysObfuscation",
+      "options": {
+        "encoding": [
+          "hexadecimal"
+        ]
+      }
+    },
+    {
+      "name": "regexObfuscation"
+    },
+    {
+      "options": {
+        "features": [
+          "opaqueSteps"
+        ]
+      },
+      "name": "controlFlowFlattening"
+    },
+    {
+      "name": "booleanToAnything"
+    },
+    {
+      "name": "identifiersRenaming"
+    },
+    {
+      "name": "globalVariableIndirection"
+    }
+  ]
+}
