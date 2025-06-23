@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Protect with Jscrambler
         id: jscrambler
-        uses: jscrambler/code-integrity-actions/protect@v6
+        uses: jscrambler/code-integrity-actions/protect@v8
         with:
           application-id: ${{ secrets.JSCRAMBLER_APPLICATION_ID }}
           secret-key: ${{ secrets.JSCRAMBLER_SECRET_KEY }}
