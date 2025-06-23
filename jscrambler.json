@@ -1,5 +1,5 @@
 {
-  "jscramblerVersion": "8.4",
+  "jscramblerVersion": "8.5",
   "mode": "manual",
   "areSubscribersOrdered": false,
   "useRecommendedOrder": true,
@@ -8,6 +8,7 @@
   "useAppClassification": true,
   "browsers": {},
   "sourceMaps": false,
+  "debugMode": true,
   "params": [
     {
       "name": "objectPropertiesSparsing"
